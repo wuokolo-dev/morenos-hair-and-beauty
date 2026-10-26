@@ -66,7 +66,7 @@ export const About: React.FC = () => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-sm overflow-hidden border border-[#242430] bg-[#14141a] aspect-[4/5] shadow-2xl">
               <img
-                src="/src/assets/images/hero_luxe_salon_1793022124335.jpg"
+                src="/images/hero_luxe_salon_1793022124335.jpg"
                 alt="Moreno’s Hair&Beauty salon concept atmosphere"
                 className="w-full h-full object-cover filter brightness-[0.82]"
                 referrerPolicy="no-referrer"

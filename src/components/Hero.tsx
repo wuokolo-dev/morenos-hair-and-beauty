@@ -38,7 +38,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         {/* Fallback Poster Image */}
         <img
-          src="/src/assets/images/hero_luxe_salon_1793022124335.jpg"
+          src="/images/hero_luxe_salon_1793022124335.jpg"
           alt="Moreno’s Hair&Beauty salon atmosphere"
           className={`absolute inset-0 w-full h-full object-cover object-center filter brightness-95 transition-opacity duration-700 ${
             videoLoaded && !videoFailed ? "opacity-0" : "opacity-100"
@@ -55,7 +55,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             loop
             playsInline
             preload="auto"
-            poster="/src/assets/images/hero_luxe_salon_1793022124335.jpg"
+            poster="/images/hero_luxe_salon_1793022124335.jpg"
             onLoadedData={() => setVideoLoaded(true)}
             onError={() => setVideoFailed(true)}
             className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-700 ${
