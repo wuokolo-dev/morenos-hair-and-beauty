@@ -1,0 +1,6 @@
+{
+  "name": "Moreno’s Hair&Beauty | Crewe Hair Salon Concept",
+  "description": "Concept website for Moreno’s Hair&Beauty at 119 Nantwich Rd, Crewe. Specialists in curly hair cutting, hair extensions, and all hair types from Afro to Caucasian.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
