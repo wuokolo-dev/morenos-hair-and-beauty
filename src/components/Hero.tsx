@@ -33,20 +33,20 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
   }, []);
 
   return (
-    <section id="home" className="relative pt-24 pb-14 sm:pt-28 sm:pb-16 md:pt-36 md:pb-28 overflow-hidden border-b border-white/[0.06] bg-[#0b0b0e]">
-      {/* Background Video Layer - Controlled Responsive Height on Mobile (approx 38-42vh, max 350px) preventing zoom distortion & screen takeover */}
-      <div className="absolute top-0 inset-x-0 h-[40vh] min-h-[250px] max-h-[350px] md:h-full md:max-h-none z-0 overflow-hidden pointer-events-none select-none">
+    <section id="home" className="relative pt-32 pb-14 sm:pt-36 sm:pb-16 md:pt-40 md:pb-24 overflow-hidden border-b border-white/[0.06] bg-[#0b0b0e]">
+      {/* Background Video Layer - Full Hero Section Coverage with Enhanced Luminosity & Subject Framing */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         {/* Fallback Poster Image */}
         <img
           src="/images/hero_luxe_salon_1793022124335.jpg"
           alt="Moreno’s Hair&Beauty salon atmosphere"
-          className={`absolute inset-0 w-full h-full object-cover object-center filter brightness-95 transition-opacity duration-700 ${
+          className={`absolute inset-0 w-full h-full object-cover object-[28%_center] md:object-center filter brightness-100 transition-opacity duration-700 ${
             videoLoaded && !videoFailed ? "opacity-0" : "opacity-100"
           }`}
           referrerPolicy="no-referrer"
         />
 
-        {/* Video Element - Controlled Sizing, Object Fit Cover & Centered Subject */}
+        {/* Video Element - Centered on Stylist & Illuminated Arched Station on Mobile */}
         {!videoFailed && (
           <video
             ref={videoRef}
@@ -58,10 +58,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             poster="/images/hero_luxe_salon_1793022124335.jpg"
             onLoadedData={() => setVideoLoaded(true)}
             onError={() => setVideoFailed(true)}
-            className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-700 ${
+            className={`absolute inset-0 w-full h-full object-cover object-[28%_center] md:object-center transition-opacity duration-700 ${
               videoLoaded ? "opacity-100" : "opacity-0"
             }`}
-            style={{ objectFit: "cover", objectPosition: "center" }}
           >
             <source
               src="https://res.cloudinary.com/gp7qrkyy/video/upload/v1793030088/Website_Video.mp4"
@@ -70,32 +69,38 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           </video>
         )}
 
-        {/* Responsive Gradient Overlays:
-            - Mobile: Soft top tone + gradual bottom fade blending seamlessly into the dark section canvas
-            - Desktop: Subtle top navbar blend + smooth bottom transition into Services
+        {/* Subtle, Balanced Lighting Overlays:
+            - Gentle ambient tint preserving the natural brightness of the salon interior
+            - Soft top feathering below fixed header
+            - Seamless bottom fade into following content
         */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0b0b0e]/50 via-[#0b0b0e]/20 to-[#0b0b0e] md:hidden" />
-        <div className="hidden md:block absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#0b0b0e]/80 via-[#0b0b0e]/30 to-transparent" />
-        <div className="hidden md:block absolute bottom-0 inset-x-0 h-36 bg-gradient-to-t from-[#0b0b0e] via-[#0b0b0e]/30 to-transparent" />
+        <div className="absolute inset-0 bg-[#0b0b0e]/20" />
+        <div className="absolute top-0 inset-x-0 h-28 sm:h-32 bg-gradient-to-b from-[#0b0b0e]/80 via-[#0b0b0e]/35 to-transparent" />
+        <div className="absolute bottom-0 inset-x-0 h-28 sm:h-36 bg-gradient-to-t from-[#0b0b0e] via-[#0b0b0e]/50 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8">
         {/* High-Contrast Readability Scrim / Backdrop Container */}
         <div className="relative max-w-3xl">
-          {/* Subtle semi-transparent dark gradient & backdrop layer ensuring 100% legibility */}
-          <div className="absolute -inset-4 sm:-inset-6 md:-inset-x-10 md:-inset-y-8 rounded-xl bg-gradient-to-r from-[#0b0b0e]/95 via-[#0b0b0e]/80 to-[#0b0b0e]/30 md:to-transparent backdrop-blur-[3px] border border-white/[0.05] md:border-none pointer-events-none -z-10 shadow-2xl md:shadow-none" />
+          {/* Refined gradient scrim ensuring 100% legibility without muddying the salon video */}
+          <div className="absolute -inset-3 sm:-inset-5 md:-inset-6 rounded-xl bg-gradient-to-r from-[#0b0b0e]/75 via-[#0b0b0e]/40 to-transparent backdrop-blur-[2px] pointer-events-none -z-10" />
 
           {/* Verified Google Rating & Specialty Kicker */}
           <div className="inline-flex flex-wrap items-center gap-3 mb-4 sm:mb-6">
-            <div className="flex items-center gap-1.5 px-3 py-1.5 bg-[#14141a]/95 border border-[#c5a059]/40 rounded-sm text-xs font-semibold text-[#dec17c] shadow-lg backdrop-blur-sm">
+            <a
+              href="#reviews"
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-[#14141a]/90 hover:bg-[#1a1a24] border border-[#c5a059]/50 hover:border-[#c5a059] rounded-sm text-xs font-semibold text-[#dec17c] shadow-lg backdrop-blur-sm transition-colors cursor-pointer group"
+              title="View Google Reviews"
+              aria-label="5.0 rating from 44 Google Reviews"
+            >
               <div className="flex items-center text-[#dec17c]">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-3 h-3 fill-current" />
                 ))}
               </div>
               <span className="font-mono tabular-nums text-white">5.0</span>
-              <span className="text-[#f5f2eb]/75">({salonConfig.rating.totalReviews} Google Reviews)</span>
-            </div>
+              <span className="text-[#f5f2eb]/80 group-hover:text-[#f5f2eb]">({salonConfig.rating.totalReviews} Google Reviews)</span>
+            </a>
 
             <div className="flex items-center gap-1.5 text-xs font-medium tracking-[0.18em] uppercase text-[#dec17c] drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
               <Sparkles className="w-3 h-3" />

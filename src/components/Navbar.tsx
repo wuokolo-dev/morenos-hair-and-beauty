@@ -55,7 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
         className={`transition-all duration-300 ${
           isScrolled
             ? "bg-[#0b0b0e]/95 backdrop-blur-md border-b border-white/[0.06] py-3 shadow-2xl"
-            : "bg-[#0b0b0e]/50 backdrop-blur-sm py-4 border-b border-white/[0.03]"
+            : "bg-[#0b0b0e]/75 backdrop-blur-md py-4 border-b border-white/[0.04]"
         }`}
       >
         <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-4 relative">
@@ -88,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           </nav>
 
           {/* Zone 3: Desktop Primary Actions (Phone call & Book button - Unchanged on Desktop) */}
-          <div className="hidden sm:flex items-center gap-3 shrink-0">
+          <div className="hidden md:flex items-center gap-3 shrink-0">
             <a
               href={`tel:${salonConfig.contact.phone}`}
               className="flex items-center gap-2 px-3.5 py-2 rounded-sm text-xs font-medium tracking-wider uppercase text-[#c9c4b7] hover:text-[#f5f2eb] hover:bg-white/5 border border-white/10 hover:border-[#c5a059]/40 transition-all whitespace-nowrap"
