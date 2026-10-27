@@ -31,7 +31,7 @@ export const BookingConfirmationModal: React.FC<BookingConfirmationModalProps> =
 • Time: ${booking.time}
 • Notes: ${booking.notes || "None"}
 ---------------------------------------
-Delivered via Formspree to Moreno’s Hair&Beauty · 119 Nantwich Rd, Crewe CW2 6BA (01270 255992)`;
+Transmitted to Moreno’s Hair&Beauty · 119 Nantwich Rd, Crewe CW2 6BA (01270 255992)`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(summaryText);
@@ -48,7 +48,7 @@ Delivered via Formspree to Moreno’s Hair&Beauty · 119 Nantwich Rd, Crewe CW2 
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-xl bg-[#121217] border border-[#c5a059]/40 rounded-sm p-6 sm:p-8 text-left shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto"
+        className="relative w-full max-w-xl bg-[#131318] border border-white/[0.08] rounded-md p-6 sm:p-8 text-left shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -69,7 +69,7 @@ Delivered via Formspree to Moreno’s Hair&Beauty · 119 Nantwich Rd, Crewe CW2 
           <div>
             <div className="text-[11px] font-semibold tracking-widest uppercase text-[#dec17c] flex items-center gap-1.5">
               <Sparkles className="w-3 h-3 text-[#25D366]" />
-              <span>Dispatched via Formspree</span>
+              <span>Enquiry Confirmed</span>
             </div>
             <h3 id="modal-headline" className="font-serif text-2xl text-[#f5f2eb] font-normal">
               Booking Enquiry Transmitted
@@ -77,15 +77,15 @@ Delivered via Formspree to Moreno’s Hair&Beauty · 119 Nantwich Rd, Crewe CW2 
           </div>
         </div>
 
-        {/* Formspree Delivery Notice Banner */}
-        <div className="p-3.5 bg-[#14141a] border border-[#25D366]/30 rounded-sm text-xs text-[#c9c4b7] leading-relaxed mb-6">
-          <span className="font-semibold text-[#25D366]">Enquiry Sent: </span>
-          Your appointment request has been securely delivered to Moreno’s Hair&Beauty via the connected Formspree service. The salon team will review your requested slot and reach out to you directly by phone or email.
+        {/* Confirmation Notice Banner */}
+        <div className="p-4 bg-[#14141a] border border-[#25D366]/20 rounded-md text-xs text-[#c9c4b7] leading-relaxed mb-6">
+          <span className="font-semibold text-[#25D366]">Enquiry Transmitted: </span>
+          Your appointment request has been securely delivered to the team at Moreno’s Hair&Beauty. Our stylists will review your requested slot and reach out directly by phone or email.
         </div>
 
         {/* Structured Appointment Details */}
-        <div className="bg-[#0b0b0e] border border-[#242430] p-5 rounded-sm space-y-3.5 mb-6 text-sm">
-          <div className="flex items-start justify-between pb-3 border-b border-[#242430]/70">
+        <div className="bg-[#0c0c10] border border-white/[0.06] p-5 rounded-md space-y-3.5 mb-6 text-sm">
+          <div className="flex items-start justify-between pb-3 border-b border-white/[0.06]">
             <div>
               <div className="text-xs text-[#8e8a80] uppercase tracking-wider">Service Selected</div>
               <div className="font-serif text-lg text-[#f5f2eb] mt-0.5">{booking.serviceName}</div>
@@ -95,7 +95,7 @@ Delivered via Formspree to Moreno’s Hair&Beauty · 119 Nantwich Rd, Crewe CW2 
             </div>
           </div>
 
-          <div className="text-xs text-[#dec17c] bg-[#14141a] p-2.5 rounded-sm border border-[#242430]">
+          <div className="text-xs text-[#dec17c] bg-[#181822] p-2.5 rounded-md border border-white/[0.06]">
             {servicePrice}
           </div>
 

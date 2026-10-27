@@ -4,7 +4,7 @@ import { Sparkles, Car, Star, Scissors, Quote, Heart } from "lucide-react";
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 md:py-32 bg-[#0b0b0e] relative border-b border-[#242430]/60">
+    <section id="about" className="py-18 md:py-30 bg-[#0b0b0e] relative border-b border-white/[0.06]">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         {/* Split Editorial Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -28,10 +28,10 @@ export const About: React.FC = () => {
               </p>
             </div>
 
-            {/* 3 Verified Pillars */}
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-[#242430]">
-              <div>
-                <div className="w-10 h-10 rounded-sm bg-[#14141a] border border-[#242430] flex items-center justify-center text-[#dec17c] mb-3">
+            {/* 3 Verified Pillars with Softened Surfaces */}
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-5 pt-8 border-t border-white/[0.06]">
+              <div className="p-5 rounded-md bg-[#131318]/90 border border-white/[0.06] shadow-sm">
+                <div className="w-10 h-10 rounded-sm bg-[#181822] border border-white/[0.08] flex items-center justify-center text-[#dec17c] mb-3">
                   <Scissors className="w-4 h-4" />
                 </div>
                 <h4 className="font-serif text-lg text-[#f5f2eb] mb-1 font-normal">All Hair Types</h4>
@@ -40,8 +40,8 @@ export const About: React.FC = () => {
                 </p>
               </div>
 
-              <div>
-                <div className="w-10 h-10 rounded-sm bg-[#14141a] border border-[#242430] flex items-center justify-center text-[#dec17c] mb-3">
+              <div className="p-5 rounded-md bg-[#131318]/90 border border-white/[0.06] shadow-sm">
+                <div className="w-10 h-10 rounded-sm bg-[#181822] border border-white/[0.08] flex items-center justify-center text-[#dec17c] mb-3">
                   <Heart className="w-4 h-4" />
                 </div>
                 <h4 className="font-serif text-lg text-[#f5f2eb] mb-1 font-normal">Curl & Extensions</h4>
@@ -50,8 +50,8 @@ export const About: React.FC = () => {
                 </p>
               </div>
 
-              <div>
-                <div className="w-10 h-10 rounded-sm bg-[#14141a] border border-[#242430] flex items-center justify-center text-[#dec17c] mb-3">
+              <div className="p-5 rounded-md bg-[#131318]/90 border border-white/[0.06] shadow-sm">
+                <div className="w-10 h-10 rounded-sm bg-[#181822] border border-white/[0.08] flex items-center justify-center text-[#dec17c] mb-3">
                   <Car className="w-4 h-4" />
                 </div>
                 <h4 className="font-serif text-lg text-[#f5f2eb] mb-1 font-normal">Customer Parking</h4>
@@ -64,7 +64,7 @@ export const About: React.FC = () => {
 
           {/* Right Column: Visual Showcase & Creed Card */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-sm overflow-hidden border border-[#242430] bg-[#14141a] aspect-[4/5] shadow-2xl">
+            <div className="relative rounded-md overflow-hidden border border-white/[0.08] bg-[#14141a] aspect-[4/5] shadow-2xl">
               <img
                 src="/images/hero_luxe_salon_1793022124335.jpg"
                 alt="Moreno’s Hair&Beauty salon concept atmosphere"
@@ -74,7 +74,7 @@ export const About: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0e] via-[#0b0b0e]/25 to-transparent" />
 
               {/* Verified Creed Card */}
-              <div className="absolute bottom-6 left-6 right-6 p-6 bg-[#0b0b0e]/92 backdrop-blur-md border border-white/10 rounded-sm">
+              <div className="absolute bottom-6 left-6 right-6 p-6 sm:p-7 bg-[#0e0e14]/92 backdrop-blur-md border border-white/[0.08] rounded-md shadow-2xl">
                 <blockquote className="font-serif italic text-base sm:text-lg text-[#f5f2eb] leading-snug mb-3 font-light">
                   &ldquo;From Afro to Caucasian hair, we celebrate every strand.&rdquo;
                 </blockquote>
@@ -88,7 +88,7 @@ export const About: React.FC = () => {
         </div>
 
         {/* Real Verified Google Reviews Section */}
-        <div id="reviews" className="mt-20 pt-16 border-t border-[#242430]/70">
+        <div id="reviews" className="mt-16 pt-16 md:mt-24 md:pt-20 border-t border-white/[0.06]">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
               <div className="text-xs font-semibold tracking-[0.24em] uppercase text-[#dec17c] mb-2">
@@ -114,19 +114,19 @@ export const About: React.FC = () => {
             {salonConfig.rating.verifiedQuotes.map((review, idx) => (
               <div
                 key={idx}
-                className="p-6 bg-[#121217] border border-[#242430] rounded-sm relative flex flex-col justify-between"
+                className="p-7 sm:p-8 bg-[#131318]/90 hover:bg-[#16161f] border border-white/[0.06] hover:border-[#c5a059]/25 rounded-md relative flex flex-col justify-between shadow-[0_4px_24px_rgba(0,0,0,0.35)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.55)] transition-all duration-300"
               >
                 <div>
                   <Quote className="w-5 h-5 text-[#dec17c]/60 mb-3" />
-                  <p className="font-serif italic text-base text-[#f5f2eb] leading-relaxed mb-4">
+                  <p className="font-serif italic text-base text-[#f5f2eb] leading-relaxed mb-6 font-light">
                     &ldquo;{review.quote}&rdquo;
                   </p>
                 </div>
-                <div className="flex items-center justify-between pt-4 border-t border-[#242430]/70 text-xs">
+                <div className="flex items-center justify-between pt-4 border-t border-white/[0.06] text-xs">
                   <span className="text-[#dec17c] font-medium">{review.source}</span>
                   <div className="flex text-[#dec17c]">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3 h-3 fill-current" />
+                      <Star key={i} className="w-3.5 h-3.5 fill-current" />
                     ))}
                   </div>
                 </div>

@@ -175,7 +175,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-[#0e0e12] relative">
+    <section id="contact" className="py-18 md:py-30 bg-[#0e0e12] relative">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           {/* Left Column: Salon Verification & Contact Info */}
@@ -191,11 +191,11 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
               </h2>
 
               <p className="text-[#c9c4b7] text-sm sm:text-base font-light leading-relaxed mb-8">
-                Ready to experience specialist curly cutting, seamless hair extensions, or styling for your hair texture? Submit your appointment enquiry directly to the salon desk via Formspree or call us on Nantwich Road.
+                Ready to experience specialist curly cutting, seamless hair extensions, or styling for your hair texture? Submit your appointment enquiry directly to our team below or call us on Nantwich Road.
               </p>
 
-              {/* Verified Contact Box */}
-              <div className="bg-[#121217] border border-[#242430] p-6 rounded-sm space-y-4 mb-8">
+              {/* Verified Contact Box with Softened Surfaces */}
+              <div className="bg-[#131318]/90 border border-white/[0.06] p-7 sm:p-8 rounded-md space-y-4 mb-8 shadow-xl">
                 <div className="flex items-center justify-between">
                   <span className="text-xs uppercase tracking-widest text-[#dec17c] font-semibold">
                     Verified Salon Desk
@@ -206,7 +206,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                 </div>
 
                 <div className="space-y-3 text-sm text-[#8e8a80]">
-                  <div className="flex items-center justify-between py-1 border-b border-[#242430]/60">
+                  <div className="flex items-center justify-between py-1 border-b border-white/[0.06]">
                     <span className="flex items-center gap-2">
                       <Phone className="w-3.5 h-3.5 text-[#dec17c]" />
                       <span>Direct Telephone:</span>
@@ -219,7 +219,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                     </a>
                   </div>
 
-                  <div className="flex items-start justify-between py-1 border-b border-[#242430]/60">
+                  <div className="flex items-start justify-between py-1 border-b border-white/[0.06]">
                     <span className="flex items-center gap-2">
                       <MapPin className="w-3.5 h-3.5 text-[#dec17c]" />
                       <span>Salon Address:</span>
@@ -235,7 +235,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                     </a>
                   </div>
 
-                  <div className="flex items-center justify-between py-1 border-b border-[#242430]/60">
+                  <div className="flex items-center justify-between py-1 border-b border-white/[0.06]">
                     <span className="flex items-center gap-2">
                       <Car className="w-3.5 h-3.5 text-[#dec17c]" />
                       <span>Parking:</span>
@@ -250,7 +250,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Visit Moreno's Hair Beauty on Instagram"
-                      className="w-7 h-7 rounded-sm bg-[#14141a] hover:bg-[#c5a059] border border-[#242430] hover:border-[#c5a059] text-[#dec17c] hover:text-[#0b0b0e] flex items-center justify-center transition-all group"
+                      className="w-7 h-7 rounded-sm bg-[#181822] hover:bg-[#c5a059] border border-white/[0.08] hover:border-[#c5a059] text-[#dec17c] hover:text-[#0b0b0e] flex items-center justify-center transition-all group"
                       title="Instagram"
                     >
                       <Instagram className="w-3.5 h-3.5 text-[#dec17c] group-hover:text-[#0b0b0e] transition-colors" />
@@ -259,27 +259,27 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                 </div>
               </div>
 
-              {/* Connected Endpoint Disclosure */}
-              <div className="p-4 bg-[#14141a] border border-[#c5a059]/30 rounded-sm text-xs text-[#8e8a80] leading-relaxed">
-                <div className="flex items-center gap-1.5 text-[#dec17c] font-medium mb-1">
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                  <span>Direct Formspree Connection Active</span>
+              {/* Client Consultation Assurance */}
+              <div className="p-5 bg-[#131318]/70 border border-white/[0.06] rounded-md text-xs text-[#8e8a80] leading-relaxed shadow-sm">
+                <div className="flex items-center gap-2 text-[#dec17c] font-medium mb-1.5">
+                  <Sparkles className="w-3.5 h-3.5 text-[#dec17c]" />
+                  <span>Direct Salon Consultations</span>
                 </div>
-                Booking inquiries submitted through this form are securely dispatched to the salon management via Formspree. You can also call <strong>01270 255992</strong> for immediate availability.
+                Our stylists personally review every appointment enquiry to match your texture goals and schedule. For same-day appointments, feel free to call our desk directly at <strong>01270 255992</strong>.
               </div>
             </div>
           </div>
 
-          {/* Right Column: Interactive Booking Enquiry Form Connected to Formspree */}
+          {/* Right Column: Interactive Booking Enquiry Form */}
           <div className="lg:col-span-7">
-            <div className="bg-[#121217] border border-[#242430] p-6 sm:p-10 rounded-sm shadow-xl">
+            <div className="bg-[#131318]/90 border border-white/[0.06] p-7 sm:p-10 rounded-md shadow-2xl">
               <div className="flex items-baseline justify-between mb-2">
                 <h3 className="font-serif text-2xl text-[#f5f2eb] font-normal">
                   Booking Enquiry Form
                 </h3>
-                <span className="text-[11px] uppercase tracking-wider text-[#dec17c] flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3 text-[#25D366]" />
-                  <span>Connected to Formspree</span>
+                <span className="text-[11px] uppercase tracking-widest text-[#dec17c] flex items-center gap-1.5 font-medium">
+                  <Sparkles className="w-3 h-3 text-[#dec17c]" />
+                  <span>Online Enquiries</span>
                 </span>
               </div>
               <p className="text-xs text-[#8e8a80] mb-8 font-light">
@@ -288,12 +288,12 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
 
               {/* Success Banner if submitted */}
               {submitSuccess && (
-                <div className="mb-6 p-4 bg-[#25D366]/10 border border-[#25D366]/40 rounded-sm flex items-start gap-3">
+                <div className="mb-6 p-4 bg-[#25D366]/10 border border-[#25D366]/40 rounded-md flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#25D366] shrink-0 mt-0.5" />
                   <div className="text-xs text-[#f5f2eb] space-y-1">
                     <p className="font-semibold text-[#25D366]">Enquiry Sent Successfully!</p>
                     <p className="text-[#c9c4b7]">
-                      Your details have been submitted via Formspree. The salon team will review your requested time slot and get back to you shortly.
+                      Your details have been received. The salon team will review your requested appointment slot and contact you shortly to confirm.
                     </p>
                   </div>
                 </div>
@@ -301,7 +301,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
 
               {/* Error Banner if submission failed */}
               {submitError && (
-                <div className="mb-6 p-4 bg-red-500/10 border border-red-500/40 rounded-sm flex items-start gap-3">
+                <div className="mb-6 p-4 bg-red-500/10 border border-red-500/40 rounded-md flex items-start gap-3">
                   <AlertCircle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
                   <div className="text-xs text-[#f5f2eb] space-y-1">
                     <p className="font-semibold text-red-400">Submission Notice</p>
@@ -332,9 +332,9 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                       onBlur={() => handleBlur("name")}
                       placeholder="e.g. Sarah Jenkins"
                       disabled={isSubmitting}
-                      className={`w-full px-4 py-3 bg-[#0b0b0e] border ${
-                        errors.name && touched.name ? "border-red-500/80" : "border-[#242430]"
-                      } focus:border-[#c5a059] text-[#f5f2eb] text-sm rounded-sm focus:outline-none transition-colors placeholder-[#8e8a80]/50 disabled:opacity-50`}
+                      className={`w-full px-4 py-3 bg-[#0c0c10] border ${
+                        errors.name && touched.name ? "border-red-500/80" : "border-white/[0.08]"
+                      } focus:border-[#c5a059]/80 focus:ring-1 focus:ring-[#c5a059]/30 text-[#f5f2eb] text-sm rounded-md focus:outline-none transition-colors placeholder-[#8e8a80]/50 disabled:opacity-50`}
                     />
                     {errors.name && touched.name && (
                       <p className="text-red-400 text-xs mt-1.5 flex items-center gap-1">
@@ -357,9 +357,9 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                       onBlur={() => handleBlur("phone")}
                       placeholder="e.g. 07700 900000"
                       disabled={isSubmitting}
-                      className={`w-full px-4 py-3 bg-[#0b0b0e] border ${
-                        errors.phone && touched.phone ? "border-red-500/80" : "border-[#242430]"
-                      } focus:border-[#c5a059] text-[#f5f2eb] text-sm rounded-sm focus:outline-none transition-colors placeholder-[#8e8a80]/50 disabled:opacity-50`}
+                      className={`w-full px-4 py-3 bg-[#0c0c10] border ${
+                        errors.phone && touched.phone ? "border-red-500/80" : "border-white/[0.08]"
+                      } focus:border-[#c5a059]/80 focus:ring-1 focus:ring-[#c5a059]/30 text-[#f5f2eb] text-sm rounded-md focus:outline-none transition-colors placeholder-[#8e8a80]/50 disabled:opacity-50`}
                     />
                     {errors.phone && touched.phone && (
                       <p className="text-red-400 text-xs mt-1.5 flex items-center gap-1">
@@ -385,9 +385,9 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                       onBlur={() => handleBlur("email")}
                       placeholder="sarah@example.co.uk"
                       disabled={isSubmitting}
-                      className={`w-full px-4 py-3 bg-[#0b0b0e] border ${
-                        errors.email && touched.email ? "border-red-500/80" : "border-[#242430]"
-                      } focus:border-[#c5a059] text-[#f5f2eb] text-sm rounded-sm focus:outline-none transition-colors placeholder-[#8e8a80]/50 disabled:opacity-50`}
+                      className={`w-full px-4 py-3 bg-[#0c0c10] border ${
+                        errors.email && touched.email ? "border-red-500/80" : "border-white/[0.08]"
+                      } focus:border-[#c5a059]/80 focus:ring-1 focus:ring-[#c5a059]/30 text-[#f5f2eb] text-sm rounded-md focus:outline-none transition-colors placeholder-[#8e8a80]/50 disabled:opacity-50`}
                     />
                     {errors.email && touched.email && (
                       <p className="text-red-400 text-xs mt-1.5 flex items-center gap-1">
@@ -408,7 +408,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                       onChange={handleChange}
                       onBlur={() => handleBlur("serviceId")}
                       disabled={isSubmitting}
-                      className="w-full px-4 py-3 bg-[#0b0b0e] border border-[#242430] focus:border-[#c5a059] text-[#f5f2eb] text-sm rounded-sm focus:outline-none transition-colors cursor-pointer disabled:opacity-50"
+                      className="w-full px-4 py-3 bg-[#0c0c10] border border-white/[0.08] focus:border-[#c5a059]/80 focus:ring-1 focus:ring-[#c5a059]/30 text-[#f5f2eb] text-sm rounded-md focus:outline-none transition-colors cursor-pointer disabled:opacity-50"
                     >
                       {salonServices.map((service) => (
                         <option key={service.id} value={service.id} className="bg-[#121217] text-[#f5f2eb]">
@@ -435,9 +435,9 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                         onChange={handleChange}
                         onBlur={() => handleBlur("date")}
                         disabled={isSubmitting}
-                        className={`w-full px-4 py-3 bg-[#0b0b0e] border ${
-                          errors.date && touched.date ? "border-red-500/80" : "border-[#242430]"
-                        } focus:border-[#c5a059] text-[#f5f2eb] text-sm rounded-sm focus:outline-none transition-colors cursor-pointer disabled:opacity-50`}
+                        className={`w-full px-4 py-3 bg-[#0c0c10] border ${
+                          errors.date && touched.date ? "border-red-500/80" : "border-white/[0.08]"
+                        } focus:border-[#c5a059]/80 focus:ring-1 focus:ring-[#c5a059]/30 text-[#f5f2eb] text-sm rounded-md focus:outline-none transition-colors cursor-pointer disabled:opacity-50`}
                       />
                     </div>
                     {errors.date && touched.date && (
@@ -459,7 +459,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                       onChange={handleChange}
                       onBlur={() => handleBlur("time")}
                       disabled={isSubmitting}
-                      className="w-full px-4 py-3 bg-[#0b0b0e] border border-[#242430] focus:border-[#c5a059] text-[#f5f2eb] text-sm rounded-sm focus:outline-none transition-colors cursor-pointer disabled:opacity-50"
+                      className="w-full px-4 py-3 bg-[#0c0c10] border border-white/[0.08] focus:border-[#c5a059]/80 focus:ring-1 focus:ring-[#c5a059]/30 text-[#f5f2eb] text-sm rounded-md focus:outline-none transition-colors cursor-pointer disabled:opacity-50"
                     >
                       {timeSlots.map((slot) => (
                         <option key={slot} value={slot} className="bg-[#121217] text-[#f5f2eb]">
@@ -483,26 +483,26 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                     onChange={handleChange}
                     disabled={isSubmitting}
                     placeholder="Tell us about your curl pattern (e.g. 3C/4A), extension goals, current color, or special requirements..."
-                    className="w-full px-4 py-3 bg-[#0b0b0e] border border-[#242430] focus:border-[#c5a059] text-[#f5f2eb] text-sm rounded-sm focus:outline-none transition-colors placeholder-[#8e8a80]/50 resize-none disabled:opacity-50"
+                    className="w-full px-4 py-3 bg-[#0c0c10] border border-white/[0.08] focus:border-[#c5a059]/80 focus:ring-1 focus:ring-[#c5a059]/30 text-[#f5f2eb] text-sm rounded-md focus:outline-none transition-colors placeholder-[#8e8a80]/50 resize-none disabled:opacity-50"
                   />
                 </div>
 
-                {/* Primary Actions: Call Salon vs Submit to Formspree */}
+                {/* Primary Actions: Call Salon vs Submit Enquiry */}
                 <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                   {/* Direct Telephone Action */}
                   <a
                     href={`tel:${salonConfig.contact.phone}`}
-                    className="flex-1 py-4 px-6 rounded-sm text-xs font-semibold tracking-widest uppercase bg-[#1a1a24] hover:bg-[#242432] text-[#f5f2eb] border border-[#242430] hover:border-[#c5a059] transition-all flex items-center justify-center gap-2.5 cursor-pointer"
+                    className="flex-1 py-4 px-6 rounded-md text-xs font-semibold tracking-widest uppercase bg-[#181822] hover:bg-[#20202c] text-[#f5f2eb] border border-white/[0.08] hover:border-[#c5a059]/50 transition-all flex items-center justify-center gap-2.5 cursor-pointer shadow-sm"
                   >
                     <Phone className="w-4 h-4 text-[#dec17c]" />
                     <span>Call 01270 255992</span>
                   </a>
 
-                  {/* Submit to Formspree Button */}
+                  {/* Submit Booking Enquiry Button */}
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="flex-1 py-4 px-6 rounded-sm text-xs font-semibold tracking-widest uppercase text-[#0b0b0e] bg-gradient-to-r from-[#dec17c] via-[#c5a059] to-[#aa853c] hover:brightness-110 active:brightness-95 transition-all flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(197,160,89,0.25)] cursor-pointer disabled:opacity-60"
+                    className="flex-1 py-4 px-6 rounded-md text-xs font-semibold tracking-widest uppercase text-[#0b0b0e] bg-gradient-to-r from-[#dec17c] via-[#c5a059] to-[#aa853c] hover:brightness-110 active:brightness-95 transition-all flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(197,160,89,0.25)] cursor-pointer disabled:opacity-60"
                   >
                     {isSubmitting ? (
                       <>

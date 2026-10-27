@@ -15,7 +15,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
       : salonServices.filter((s) => s.categoryId === activeCategory);
 
   return (
-    <section id="services" className="py-20 md:py-28 bg-[#0b0b0e] relative border-b border-[#242430]/60">
+    <section id="services" className="py-18 md:py-30 bg-[#0b0b0e] relative border-b border-white/[0.06]">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
@@ -47,7 +47,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
               className={`px-4 py-2.5 rounded-sm text-xs font-medium tracking-[0.12em] uppercase transition-all whitespace-nowrap shrink-0 cursor-pointer ${
                 activeCategory === cat.id
                   ? "bg-[#c5a059] text-[#0b0b0e] font-semibold shadow-[0_2px_12px_rgba(197,160,89,0.2)]"
-                  : "bg-[#14141a] text-[#c9c4b7] hover:text-[#f5f2eb] hover:bg-[#1a1a24] border border-[#242430]"
+                  : "bg-[#131318] text-[#c9c4b7] hover:text-[#f5f2eb] hover:bg-[#1a1a24] border border-white/[0.06]"
               }`}
             >
               {cat.name}
@@ -55,12 +55,12 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
           ))}
         </div>
 
-        {/* Services Grid */}
+        {/* Services Grid with Softened Cards & Generous Padding */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredServices.map((service) => (
             <article
               key={service.id}
-              className="group bg-[#121217] border border-[#242430] hover:border-[#c5a059]/40 transition-all duration-300 rounded-sm overflow-hidden flex flex-col justify-between"
+              className="group bg-[#131318]/90 hover:bg-[#16161f] border border-white/[0.06] hover:border-[#c5a059]/35 transition-all duration-300 rounded-md overflow-hidden flex flex-col justify-between shadow-[0_4px_24px_rgba(0,0,0,0.35)] hover:shadow-[0_8px_36px_rgba(0,0,0,0.55)]"
             >
               <div>
                 {/* Service Image with Measured Gradient Overlay */}
@@ -71,16 +71,16 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#121217] via-transparent to-transparent opacity-80" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#131318] via-transparent to-transparent opacity-80" />
 
-                  {/* Clean unboxed category label */}
-                  <div className="absolute top-3.5 left-4 text-[11px] font-medium tracking-widest uppercase text-[#f5f2eb] bg-[#0b0b0e]/75 backdrop-blur-sm px-2.5 py-1 border border-white/10">
+                  {/* Clean category label */}
+                  <div className="absolute top-3.5 left-4 text-[10.5px] font-medium tracking-widest uppercase text-[#f5f2eb] bg-[#0b0b0e]/80 backdrop-blur-sm px-3 py-1 border border-white/[0.08] rounded-sm">
                     {service.categoryName}
                   </div>
                 </div>
 
-                {/* Service Card Details */}
-                <div className="p-6">
+                {/* Service Card Details with Generous Internal Padding */}
+                <div className="p-7">
                   {/* Title */}
                   <div className="flex items-baseline justify-between gap-4 mb-2.5">
                     <h3 className="font-serif text-xl sm:text-2xl text-[#f5f2eb] font-normal group-hover:text-[#dec17c] transition-colors leading-tight">
@@ -108,7 +108,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
                   </p>
 
                   {/* Feature inclusions */}
-                  <div className="space-y-2 pt-4 border-t border-[#242430]/70 mb-6">
+                  <div className="space-y-2 pt-4 border-t border-white/[0.06] mb-2">
                     {service.features.map((feature, idx) => (
                       <div key={idx} className="flex items-start gap-2 text-xs text-[#8e8a80]">
                         <Check className="w-3.5 h-3.5 text-[#dec17c] shrink-0 mt-0.5" />
@@ -120,11 +120,11 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
               </div>
 
               {/* Action Button */}
-              <div className="p-6 pt-0">
+              <div className="p-7 pt-0">
                 <button
                   onClick={() => onSelectService(service.id)}
                   type="button"
-                  className="w-full py-3 px-4 rounded-sm text-xs font-semibold tracking-widest uppercase bg-[#1a1a24] hover:bg-[#c5a059] text-[#f5f2eb] hover:text-[#0b0b0e] border border-[#242430] hover:border-[#c5a059] transition-all flex items-center justify-center gap-2 cursor-pointer group/btn"
+                  className="w-full py-3 px-4 rounded-sm text-xs font-semibold tracking-widest uppercase bg-[#181822] hover:bg-[#c5a059] text-[#f5f2eb] hover:text-[#0b0b0e] border border-white/[0.08] hover:border-[#c5a059] transition-all flex items-center justify-center gap-2 cursor-pointer group/btn"
                 >
                   <Calendar className="w-3.5 h-3.5 group-hover/btn:text-[#0b0b0e] text-[#dec17c] transition-colors" />
                   <span>Book This Service</span>

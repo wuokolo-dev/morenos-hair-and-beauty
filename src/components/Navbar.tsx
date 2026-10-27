@@ -44,19 +44,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
   ];
 
   return (
-    <>
-      {/* Unofficial Concept Demo Announcement Bar */}
-      <div className="bg-[#14141a] border-b border-[#242430] py-1.5 px-4 text-center text-[11px] tracking-wider text-[#dec17c] font-medium z-50 relative">
-        <span className="opacity-90">
-          Unofficial Concept Prototype for Moreno’s Hair&Beauty (Crewe, UK) · Pending Owner Review
-        </span>
+    <header className="fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+      {/* Refined Minimal Prototype Notice */}
+      <div className="bg-[#0e0e13]/95 backdrop-blur-md border-b border-white/[0.06] py-1.5 px-4 text-center text-[10px] sm:text-[11px] tracking-[0.14em] uppercase text-[#dec17c]/85 font-medium">
+        <span>Private Concept Preview — Prepared for Moreno's Hair & Beauty</span>
       </div>
 
-      <header
-        className={`fixed top-7 left-0 right-0 z-40 transition-all duration-300 ${
+      {/* Main Navbar */}
+      <div
+        className={`transition-all duration-300 ${
           isScrolled
-            ? "bg-[#0b0b0e]/95 backdrop-blur-md border-b border-[#242430]/70 py-3 shadow-2xl"
-            : "bg-transparent py-4 border-b border-white/5"
+            ? "bg-[#0b0b0e]/95 backdrop-blur-md border-b border-white/[0.06] py-3 shadow-2xl"
+            : "bg-[#0b0b0e]/50 backdrop-blur-sm py-4 border-b border-white/[0.03]"
         }`}
       >
         <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-4 relative">
@@ -173,7 +172,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             </div>
           )}
         </div>
-      </header>
-    </>
+      </div>
+    </header>
   );
 };

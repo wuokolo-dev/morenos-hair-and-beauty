@@ -20,10 +20,10 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectLook }) => {
       : editorialCollection.filter((item) => item.category === activeFilter);
 
   return (
-    <section id="gallery" className="py-20 md:py-28 bg-[#0e0e12] relative border-b border-[#242430]/60">
+    <section id="gallery" className="py-18 md:py-30 bg-[#0e0e12] relative border-b border-white/[0.06]">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         {/* Section Main Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <div className="max-w-xl">
             <div className="text-xs font-semibold tracking-[0.24em] uppercase text-[#dec17c] mb-2.5">
               Visual Portfolio & Lookbook
@@ -37,7 +37,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectLook }) => {
           </div>
 
           {/* Interactive Lookbook Filters */}
-          <div className="flex flex-wrap items-center gap-1.5 p-1 bg-[#14141a] border border-[#242430] rounded-sm">
+          <div className="flex flex-wrap items-center gap-1.5 p-1 bg-[#131318] border border-white/[0.06] rounded-sm">
             {galleryFilters.map((filter) => (
               <button
                 key={filter.id}
@@ -58,8 +58,8 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectLook }) => {
         {/* =========================================================================
             SECTION 1: Collection I · Signature Salon Artistry & Transformations
            ========================================================================= */}
-        <div className="mb-20">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 mb-8 border-b border-[#242430]">
+        <div className="mb-16 md:mb-20">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 mb-8 border-b border-white/[0.06]">
             <div>
               <div className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#dec17c] flex items-center gap-1.5 mb-1">
                 <Layers className="w-3.5 h-3.5" />
@@ -75,7 +75,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectLook }) => {
           </div>
 
           {filteredSignature.length === 0 ? (
-            <div className="py-12 text-center text-xs uppercase tracking-widest text-[#8e8a80] bg-[#121217] border border-[#242430] rounded-sm">
+            <div className="py-12 text-center text-xs uppercase tracking-widest text-[#8e8a80] bg-[#131318] border border-white/[0.06] rounded-md">
               No looks in Collection I matching this filter.
             </div>
           ) : (
@@ -84,7 +84,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectLook }) => {
                 <div
                   key={item.id}
                   onClick={() => onSelectLook(item)}
-                  className="group relative bg-[#121217] border border-[#242430] hover:border-[#c5a059]/50 overflow-hidden cursor-pointer transition-all duration-300 rounded-sm aspect-[4/3]"
+                  className="group relative bg-[#131318]/90 border border-white/[0.06] hover:border-[#c5a059]/40 overflow-hidden cursor-pointer transition-all duration-300 rounded-md aspect-[4/3] shadow-[0_4px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.55)]"
                 >
                   <img
                     src={item.image}
@@ -126,8 +126,8 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectLook }) => {
         </div>
 
         {/* Elegant Editorial Divider */}
-        <div className="relative my-16 flex items-center justify-center">
-          <div className="w-full border-t border-[#242430]" />
+        <div className="relative my-14 md:my-18 flex items-center justify-center">
+          <div className="w-full border-t border-white/[0.06]" />
           <div className="absolute px-4 bg-[#0e0e12] flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-[#dec17c]">
             <span className="w-1.5 h-1.5 rotate-45 bg-[#c5a059]" />
             <span>Editorial Retrospective</span>
@@ -139,7 +139,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectLook }) => {
             SECTION 2: Collection II · Editorial Texture, Precision & Studio Finishes
            ========================================================================= */}
         <div>
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 mb-8 border-b border-[#242430]">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 mb-8 border-b border-white/[0.06]">
             <div>
               <div className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#dec17c] flex items-center gap-1.5 mb-1">
                 <Layers className="w-3.5 h-3.5" />
@@ -155,7 +155,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectLook }) => {
           </div>
 
           {filteredEditorial.length === 0 ? (
-            <div className="py-12 text-center text-xs uppercase tracking-widest text-[#8e8a80] bg-[#121217] border border-[#242430] rounded-sm">
+            <div className="py-12 text-center text-xs uppercase tracking-widest text-[#8e8a80] bg-[#131318] border border-white/[0.06] rounded-md">
               No looks in Collection II matching this filter.
             </div>
           ) : (
@@ -164,7 +164,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onSelectLook }) => {
                 <div
                   key={item.id}
                   onClick={() => onSelectLook(item)}
-                  className="group relative bg-[#121217] border border-[#242430] hover:border-[#c5a059]/50 overflow-hidden cursor-pointer transition-all duration-300 rounded-sm aspect-[4/3]"
+                  className="group relative bg-[#131318]/90 border border-white/[0.06] hover:border-[#c5a059]/40 overflow-hidden cursor-pointer transition-all duration-300 rounded-md aspect-[4/3] shadow-[0_4px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.55)]"
                 >
                   <img
                     src={item.image}
