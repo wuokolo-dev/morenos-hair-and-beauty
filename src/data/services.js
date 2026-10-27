@@ -29,7 +29,7 @@ export const salonServices = [
     priceNote: "Guide from £65 · Subject to hair length & density",
     duration: "75–90 min",
     description: "Anatomical dry curl-by-curl precision cutting respecting natural bounce, curl grouping, and volume balance. Includes deep hydration cleanse, curl defining ritual, and diffuse finish.",
-    image: "/images/service_couture_cut_1793022121733.jpg",
+    image: "/images/service_curly_cut_1793042076958.jpg",
     features: [
       "Specialist curl pattern & porosity assessment",
       "Curl-by-curl dry sculpting technique",
@@ -45,7 +45,7 @@ export const salonServices = [
     priceNote: "Price on Consultation · Bespoke matching",
     duration: "120–240 min",
     description: "Specialist extension fitting tailored to all textures from Afro to Caucasian hair. Seamless blend, volume enhancement, and length matching with professional aftercare advice.",
-    image: "/images/service_wig_styling_1793022120638.jpg",
+    image: "/images/service_bespoke_extensions_1793042078150.jpg",
     features: [
       "Texture, color & density custom matching",
       "Gentle non-damaging application methods",
@@ -61,7 +61,7 @@ export const salonServices = [
     priceNote: "Guide from £45 · All hair textures",
     duration: "60 min",
     description: "Tailored wet or dry precision cutting, bespoke wash at our tranquil basin, and luxury blowout styling tailored for your lifestyle and face shape.",
-    image: "/images/service_couture_cut_1793022121733.jpg",
+    image: "/images/service_precision_cut_1793042077984.jpg",
     features: [
       "Professional pre-cut consultation",
       "Invigorating wash & conditioning ritual",
@@ -109,7 +109,7 @@ export const salonServices = [
     priceNote: "Guide from £60 · Chemical-free smoothing",
     duration: "90 min",
     description: "Deep steam conditioning treatment followed by a precision thermal silk press that leaves natural textured hair weightless, silky, and with mirror-like shine.",
-    image: "/images/service_balayage_color_1793022124089.jpg",
+    image: "/images/service_silk_press_1793042075726.jpg",
     features: [
       "Hydrating steam conditioning infusion",
       "Thermal heat defense shield",
@@ -125,7 +125,7 @@ export const salonServices = [
     priceNote: "Guide from £50 · Rejuvenating care",
     duration: "45–60 min",
     description: "Targeted aesthetic scalp therapy and intensive fiber replenishment formulated to soothe the scalp, remove buildup, and restore vibrant hair health.",
-    image: "/images/hero_luxe_salon_1793022124335.jpg",
+    image: "/images/service_scalp_ritual_1793042077913.jpg",
     features: [
       "Dermal exfoliation & scalp purification",
       "Botanical nutrient infusion",

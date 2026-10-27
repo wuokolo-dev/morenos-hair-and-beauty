@@ -1,7 +1,10 @@
 /**
  * Curated Gallery for Moreno’s Hair&Beauty.
- * Showcasing our specialties across all hair types:
- * Curly hair sculpts, luxury extensions, artisan braids, dimensional color, and salon atmosphere.
+ * Two distinct, complementary portfolio collections:
+ * 1. Collection I: Signature Transformations & Artistry
+ * 2. Collection II: Editorial Texture, Finishes & Salon Atmosphere
+ *
+ * All items feature 100% distinct, high-resolution salon photography.
  */
 
 export const galleryFilters = [
@@ -13,59 +16,151 @@ export const galleryFilters = [
   { id: "color", label: "Color & Balayage" },
 ];
 
-export const galleryItems = [
+/**
+ * Collection I — Signature Salon Portfolio / Transformations & Core Specialties
+ */
+export const signatureCollection = [
   {
-    id: "look-01",
-    category: "afro",
-    title: "Artisan Bohemian Knotless Braids",
-    subtitle: "Tension-free parting celebrating natural hair textures with golden accents",
-    image: "/images/service_artisan_braids_1793022122255.jpg",
-    aspect: "tall",
-    serviceRef: "bohemian-knotless-braids",
-  },
-  {
-    id: "look-02",
-    category: "cuts",
-    title: "Precision Razor Cut & Sleek Styling",
-    subtitle: "Sharp perimeter tailoring and glass-finish shine on dark strands",
-    image: "/images/service_couture_cut_1793022121733.jpg",
-    aspect: "square",
-    serviceRef: "precision-haircut",
-  },
-  {
-    id: "look-03",
+    id: "sig-01",
+    collection: "signature",
+    collectionTitle: "Collection I · Signature Artistry",
     category: "color",
-    title: "Luminous Dimensional Balayage",
-    subtitle: "Sun-kissed blended highlights with healthy, high-shine waves",
-    image: "/images/service_balayage_color_1793022124089.jpg",
+    title: "Luminous Honey Balayage & Beach Waves",
+    subtitle: "Multi-tonal sunlit ribbons hand-painted with dimensional depth and gloss toner finish",
+    image: "/images/gallery_honey_balayage_1793042097621.jpg",
     aspect: "square",
     serviceRef: "dimensional-balayage-color",
   },
   {
-    id: "look-04",
-    category: "extensions",
-    title: "Bespoke Glamour Waves & Extension Blending",
-    subtitle: "Seamless density enhancement and voluminous, touchable length",
-    image: "/images/service_wig_styling_1793022120638.jpg",
-    aspect: "tall",
-    serviceRef: "hair-extensions-consult",
-  },
-  {
-    id: "look-05",
+    id: "sig-02",
+    collection: "signature",
+    collectionTitle: "Collection I · Signature Artistry",
     category: "curly",
-    title: "Curly Hair Precision Sculpting & Hydration",
-    subtitle: "Dedicated curl-by-curl cutting honoring natural curl elasticity and bounce",
-    image: "/images/service_couture_cut_1793022121733.jpg",
+    title: "Specialist 3C/4A Defined Curl Sculpt",
+    subtitle: "Dry curl-by-curl anatomical cutting preserving elasticity, density, and natural crown volume",
+    image: "/images/gallery_curly_volume_1793042097990.jpg",
     aspect: "square",
     serviceRef: "curly-cut-sculpt",
   },
   {
-    id: "look-06",
-    category: "all",
-    title: "Contemporary Salon Environment on Nantwich Rd",
-    subtitle: "Tranquil styling stations, welcoming hospitality, and dedicated parking",
-    image: "/images/hero_luxe_salon_1793022124335.jpg",
-    aspect: "wide",
+    id: "sig-03",
+    collection: "signature",
+    collectionTitle: "Collection I · Signature Artistry",
+    category: "afro",
+    title: "Waist-Length Artisan Knotless Braids",
+    subtitle: "Zero-tension scalp partings, neat knotless feed-in roots, and delicate gold filigree accents",
+    image: "/images/gallery_knotless_waist_1793042098867.jpg",
+    aspect: "tall",
+    serviceRef: "bohemian-knotless-braids",
+  },
+  {
+    id: "sig-04",
+    collection: "signature",
+    collectionTitle: "Collection I · Signature Artistry",
+    category: "extensions",
+    title: "Seamless Caramel & Brunette Extension Blend",
+    subtitle: "Invisible custom weft application delivering touchable length, volume, and effortless bouncy blowout",
+    image: "/images/gallery_caramel_extensions_1793042099743.jpg",
+    aspect: "square",
+    serviceRef: "hair-extensions-consult",
+  },
+  {
+    id: "sig-05",
+    collection: "signature",
+    collectionTitle: "Collection I · Signature Artistry",
+    category: "afro",
+    title: "Ultra-Fluid Silk Press with Bouncy Finish",
+    subtitle: "Steam hydration infusion and thermal smoothing creating weightless flow and mirror reflection",
+    image: "/images/gallery_silkpress_flip_1793042100604.jpg",
+    aspect: "square",
+    serviceRef: "silk-press-treatment",
+  },
+  {
+    id: "sig-06",
+    collection: "signature",
+    collectionTitle: "Collection I · Signature Artistry",
+    category: "cuts",
+    title: "Architectural Precision Textured Pixie Cut",
+    subtitle: "Expertly sculpted tapered neckline with soft texturized crown and face-framing fringe",
+    image: "/images/gallery_textured_pixie_1793042100592.jpg",
+    aspect: "square",
     serviceRef: "precision-haircut",
   },
 ];
+
+/**
+ * Collection II — Editorial Texture, Precision & Studio Finishes
+ */
+export const editorialCollection = [
+  {
+    id: "edt-01",
+    collection: "editorial",
+    collectionTitle: "Collection II · Editorial Texture",
+    category: "color",
+    title: "Radiant Copper Bronze Butterfly Layers",
+    subtitle: "Rich warm autumn copper gloss paired with sweeping 90s-inspired voluminous blowout layers",
+    image: "/images/gallery_copper_layers_1793042115118.jpg",
+    aspect: "square",
+    serviceRef: "dimensional-balayage-color",
+  },
+  {
+    id: "edt-02",
+    collection: "editorial",
+    collectionTitle: "Collection II · Editorial Texture",
+    category: "afro",
+    title: "Bohemian Goddess Braids & Soft Curls",
+    subtitle: "Square-parted artisan box braids accented with cascading spiral tendrils throughout",
+    image: "/images/gallery_goddess_braids_1793042115796.jpg",
+    aspect: "tall",
+    serviceRef: "bohemian-knotless-braids",
+  },
+  {
+    id: "edt-03",
+    collection: "editorial",
+    collectionTitle: "Collection II · Editorial Texture",
+    category: "curly",
+    title: "Honey-Caramel Hydrated Ringlets",
+    subtitle: "Botanical moisture infusion defining natural corkscrew curls with luminous dimensional tone",
+    image: "/images/gallery_honey_ringlets_1793042116267.jpg",
+    aspect: "square",
+    serviceRef: "curly-cut-sculpt",
+  },
+  {
+    id: "edt-04",
+    collection: "editorial",
+    collectionTitle: "Collection II · Editorial Texture",
+    category: "cuts",
+    title: "Liquid Glass Hair Dark Espresso Lob",
+    subtitle: "Ultra-sharp geometric perimeter with glass-like light refraction and fluid movement",
+    image: "/images/gallery_espresso_gloss_1793042116526.jpg",
+    aspect: "square",
+    serviceRef: "precision-haircut",
+  },
+  {
+    id: "edt-05",
+    collection: "editorial",
+    collectionTitle: "Collection II · Editorial Texture",
+    category: "extensions",
+    title: "Sculpted Hollywood Glamour Waves",
+    subtitle: "Luxury density enhancement styled into timeless S-pattern red carpet waves with golden shimmer",
+    image: "/images/gallery_hollywood_waves_1793042117236.jpg",
+    aspect: "square",
+    serviceRef: "hair-extensions-consult",
+  },
+  {
+    id: "edt-06",
+    collection: "editorial",
+    collectionTitle: "Collection II · Editorial Texture",
+    category: "all",
+    title: "Atelier Styling Suites on Nantwich Road",
+    subtitle: "Backlit circular LED mirrors, dark oak & brass styling stations, and serene Crewe salon atmosphere",
+    image: "/images/gallery_salon_stations_1793042118334.jpg",
+    aspect: "wide",
+    serviceRef: "aesthetics-hair-ritual",
+  },
+];
+
+/**
+ * Combined catalog of all 12 distinct gallery looks for seamless searching and modal lookup.
+ */
+export const galleryItems = [...signatureCollection, ...editorialCollection];
